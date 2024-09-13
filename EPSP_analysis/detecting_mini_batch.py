@@ -129,7 +129,7 @@ def process_image(img_path, save_dir):
     print('Processing {}'.format(img_path))
     mini_detector = MiniDetector(img_path, save_dir)
     mini_detector.pre_processing(fs=200, cutoff=0.5, order=5)
-    mini_detector.find_mini_events(threshold=3)
+    mini_detector.find_mini_events(threshold=3.5)
     mini_detector.save_data()
 
 
